@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Assalomu alaykum, {{ request.user.username }} !</h1>
+
+<a href="/logout/">Tizimdan chiqish</a>
+
+{% endblock content %}

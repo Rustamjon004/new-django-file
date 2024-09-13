@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="text" placeholder="username" name="username">
+    <input type="text" placeholder="parol" name="password">
+    <button type="submit">Tizimga kirish</button>
+</form>
+{% endblock content %}

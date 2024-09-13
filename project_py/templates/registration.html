@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="text" placeholder="Ism" name="first_name">
+    <input type="text" placeholder="Familiya" name="last_name">
+    <input type="email" placeholder="E-mail manzil" name="email" required>
+    <input type="text" placeholder="Parol" name="password1" required>
+    <input type="text" placeholder="Parolni tasdiqlang" name="password2" required>
+    <button type="submit">Tizimda ro'yxatdan o'tish</button>
+</form>
+{% endblock content %}
